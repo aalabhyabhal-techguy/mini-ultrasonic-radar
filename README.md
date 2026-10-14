@@ -56,4 +56,6 @@ FACED POWER ISSUES HERE
 OPENED UP
 <img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/7caf896c-be21-4493-855c-e89391fc8592" />
 
+WIRING DIAGRAM
+<img width="1010" height="712" alt="image" src="https://github.com/user-attachments/assets/42254206-8574-4d8e-8ccd-f23e952750a4" />
 
