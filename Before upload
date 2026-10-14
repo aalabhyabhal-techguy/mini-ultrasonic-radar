@@ -1,0 +1,5 @@
+Before uploading
+1. Install the U8g2 and Adafruit FastLED libraries from the Arduino IDE's Library Manager.
+2. Open the file in the Arduino IDE.
+3. Select Arduino Nano/UNO(The one with which you are making your radar) under Tools → Board.
+4. Select the correct COM port and click Upload.
