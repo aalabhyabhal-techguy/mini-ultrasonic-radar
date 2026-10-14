@@ -1,0 +1,32 @@
+HERE ARE THE CONNECTIONS
+
+
+HC-SR04 Ultrasonic Sensor
+
+VCC - 5V
+GND - GND
+TRIG - D9
+ECHO - D10
+
+SH1106 OLED (I²C)
+
+VCC - 5V*
+GND - GND
+SDA - A4
+SCL - A5
+
+WS2812B LED	
+DIN - D3
+GND - GND
+5V / VCC - 5V*
+
+Buzzer	
+
+Red wire (+) - D4*
+Black wire (−) - GND
+
+MG90S Servo 
+
+Motor Signal (orange/yellow) - D6
+VCC (red) - External regulated 5V supply
+GND (brown/black) - External supply GND and Arduino GND
