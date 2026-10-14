@@ -25,8 +25,8 @@ Buzzer
 Red wire (+) - D4*
 Black wire (−) - GND
 
-MG90S Servo 
+MG90S Servo Motor 
 
-Motor Signal (orange/yellow) - D6
+Signal (orange/yellow) - D6
 VCC (red) - External regulated 5V supply
 GND (brown/black) - External supply GND and Arduino GND
