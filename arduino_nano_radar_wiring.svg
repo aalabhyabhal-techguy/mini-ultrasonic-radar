@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+  <rect width="1400" height="1000" fill="#ffffff"/>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#172033}.title{font-size:30px;font-weight:bold}.sub{font-size:15px;fill:#475569}.head{font-size:19px;font-weight:bold}.name{font-size:16px;font-weight:bold}.pin{font-size:14px}.note{font-size:14px}.small{font-size:12px}.wire{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <text x="40" y="48" class="title">Arduino Nano Radar — Wiring Diagram</text>
+  <text x="40" y="76" class="sub">Arduino Nano • HC-SR04 • SH1106 I²C OLED • MG90S • WS2812B • Active buzzer</text>
+  <!-- Nano -->
+  <rect x="510" y="270" width="350" height="440" rx="18" fill="#e7f2e8" stroke="#287347" stroke-width="3"/>
+  <rect x="555" y="292" width="260" height="48" rx="7" fill="#287347"/>
+  <text x="685" y="322" text-anchor="middle" font-size="23" font-weight="bold" fill="#fff">ARDUINO NANO</text>
+  <text x="530" y="375" class="pin">D3</text><text x="530" y="415" class="pin">D4</text><text x="530" y="455" class="pin">D6</text><text x="530" y="495" class="pin">D9</text><text x="530" y="535" class="pin">D10</text><text x="530" y="585" class="pin">A4 / SDA</text><text x="530" y="625" class="pin">A5 / SCL</text><text x="530" y="675" class="pin">5V / GND</text>
+  <text x="770" y="375" class="pin">Digital out</text><text x="770" y="415" class="pin">Digital out</text><text x="770" y="455" class="pin">Servo signal</text><text x="770" y="495" class="pin">Trigger</text><text x="770" y="535" class="pin">Echo</text><text x="770" y="585" class="pin">I²C data</text><text x="770" y="625" class="pin">I²C clock</text>
+  <!-- Components -->
+  <rect x="55" y="185" width="285" height="180" rx="12" fill="#eaf3ff" stroke="#3166a8" stroke-width="2.5"/>
+  <text x="197" y="215" text-anchor="middle" class="name">HC-SR04 Ultrasonic</text>
+  <text x="80" y="255" class="pin">VCC</text><text x="80" y="290" class="pin">GND</text><text x="80" y="325" class="pin">TRIG</text><text x="230" y="255" class="pin">5V</text><text x="230" y="290" class="pin">GND</text><text x="230" y="325" class="pin">D9</text>
+  <rect x="55" y="460" width="285" height="175" rx="12" fill="#f2ecff" stroke="#7750a8" stroke-width="2.5"/>
+  <text x="197" y="490" text-anchor="middle" class="name">SH1106 OLED (I²C)</text>
+  <text x="80" y="530" class="pin">VCC</text><text x="80" y="565" class="pin">GND</text><text x="80" y="600" class="pin">SDA / SCL</text>
+  <text x="230" y="530" class="pin">Nano 5V*</text><text x="230" y="565" class="pin">GND</text><text x="230" y="600" class="pin">A4 / A5</text>
+  <rect x="1040" y="160" width="300" height="170" rx="12" fill="#fff1e8" stroke="#c45b24" stroke-width="2.5"/>
+  <text x="1190" y="192" text-anchor="middle" class="name">MG90S Servo</text>
+  <text x="1065" y="235" class="pin">Signal (orange/yellow)</text><text x="1065" y="270" class="pin">Red (+5V)</text><text x="1065" y="305" class="pin">Brown/black (GND)</text>
+  <rect x="1040" y="385" width="300" height="145" rx="12" fill="#fff7d9" stroke="#b48a00" stroke-width="2.5"/>
+  <text x="1190" y="417" text-anchor="middle" class="name">WS2812B RGB LED</text>
+  <text x="1065" y="455" class="pin">DIN  ← Nano D3</text><text x="1065" y="485" class="pin">+5V / GND</text><text x="1065" y="510" class="small">Optional 330–470 Ω in series on DIN</text>
+  <rect x="1040" y="585" width="300" height="110" rx="12" fill="#ffe8ec" stroke="#b93852" stroke-width="2.5"/>
+  <text x="1190" y="617" text-anchor="middle" class="name">Active Buzzer</text>
+  <text x="1065" y="653" class="pin">+ / signal ← Nano D4</text><text x="1065" y="678" class="pin">− → GND</text>
+  <rect x="1010" y="760" width="330" height="125" rx="12" fill="#e8f7ff" stroke="#18749c" stroke-width="2.5"/>
+  <text x="1175" y="792" text-anchor="middle" class="name">External regulated 5V</text>
+  <text x="1035" y="830" class="pin">+5V → Servo red wire ONLY</text><text x="1035" y="858" class="pin">GND → Servo ground + Nano GND</text>
+  <!-- signal wires -->
+  <path d="M510 375 H450 V325 H340" class="wire" stroke="#c88b00"/>
+  <path d="M510 415 H465 V640 H970 V653 H1040" class="wire" stroke="#c83755"/>
+  <path d="M510 455 H900 V235 H1040" class="wire" stroke="#d97706"/>
+  <path d="M510 495 H430 V325 H340" class="wire" stroke="#2563eb"/>
+  <path d="M510 535 H405 V325 H340" class="wire" stroke="#16a34a"/>
+  <path d="M510 585 H445 V600 H340" class="wire" stroke="#7c3aed"/>
+  <path d="M510 625 H465 V615 H340" class="wire" stroke="#9333ea"/>
+  <!-- LED and servo power connections -->
+  <path d="M860 375 H955 V455 H1040" class="wire" stroke="#c88b00"/>
+  <path d="M860 675 H925 V485 H1040" class="wire" stroke="#dc2626" stroke-dasharray="8 6"/>
+  <path d="M1175 830 V720 H960 V700 H860" class="wire" stroke="#2563eb" stroke-dasharray="8 6"/>
+  <path d="M1175 760 V290 H1340" class="wire" stroke="#dc2626" stroke-dasharray="8 6"/>
+  <path d="M860 675 H900 V858 H1010" class="wire" stroke="#111827" stroke-dasharray="8 6"/>
+  <!-- legend -->
+  <rect x="45" y="745" width="900" height="140" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="70" y="777" class="head">Power and safety notes</text>
+  <text x="70" y="808" class="note">• Nano 5V supplies the HC-SR04 and WS2812B; OLED VCC depends on the exact module's voltage rating.</text>
+  <text x="70" y="834" class="note">• Tie all grounds together: Nano, sensors, LED, buzzer and external servo supply.</text>
+  <text x="70" y="860" class="note" font-weight="bold">• Do not connect external servo +5V to Nano 5V when the Nano is USB-powered.</text>
+  <text x="45" y="925" class="small">Wire colors are illustrative. Confirm the printed labels and wire colors on your actual modules before powering.</text>
+  <text x="45" y="947" class="small">If using a bare buzzer or a high-current LED assembly, check current requirements and use a suitable driver/power source.</text>
+</svg>
