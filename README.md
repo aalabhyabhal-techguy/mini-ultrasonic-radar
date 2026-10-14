@@ -9,37 +9,41 @@ A DIY radar project using an Arduino Nano, an HC-SR04 ultrasonic sensor, an SH11
 
 This project detects nearby objects and estimates their distance and direction using an ultrasonic sensor mounted on a rotating servo motor. An OLED displays radar graphics and distance readings, while an LED and buzzer provide visual and sound alerts to help identify nearby obstacles.
 
-Bill of Materials (BOM) — Arduino Radar Project
-1. Arduino Nano
-Quantity: 1
-URL: https://robokits.co.in/development-board/
-2. HC-SR04 Ultrasonic Sensor
-Quantity: 1
-URL: https://www.horizocart.com/
-3. 1.3-inch SH1106 OLED Display (128 × 64, I²C)
-Quantity: 1
-URL: https://probots.co.in/1-3-inch-128x64-oled-blue-display-sh1106-i2c.html
-4. MG90S Servo Motor
-Quantity: 1
-URL: https://artechnology.space/
-5. WS2812B Addressable RGB LED
-Quantity: 1
-URL: https://electronicspices.com/
-6. 5V Active Buzzer
-Quantity: 1
-URL: https://caresstech.in/
-7. Regulated 5V Power Supply
-Quantity: 1
-URL: https://electrobot.co.in/
-8. Solderless Breadboard
-Quantity: 1
-URL: https://robokits.co.in/development-board/
-9. Jumper Wires
-Quantity: As required
-URL: https://robokits.co.in/development-board/
-10. USB Cable for Arduino Nano
-Quantity: 1
-URL: https://www.arduino.cc/
+## Bill of Materials (BOM)
+
+| S. No. | Component | Specification | Quantity |
+|---:|---|---|---:|
+| 1 | Arduino Nano | ATmega328P | 1 |
+| 2 | Ultrasonic Sensor | HC-SR04 | 1 |
+| 3 | OLED Display | 1.3-inch, 128 × 64, SH1106, I²C | 1 |
+| 4 | Servo Motor | MG90S | 1 |
+| 5 | RGB LED | WS2812B addressable LED | 1 |
+| 6 | Active Buzzer | 5V active buzzer | 1 |
+| 7 | Power Supply | Regulated 5V supply for servo | 1 |
+| 8 | Breadboard | Solderless prototyping board | 1 |
+| 9 | Jumper Wires | Compatible with Arduino connections | As required |
+| 10 | USB Cable | Compatible with Arduino Nano | 1 |
+
+### Software and Libraries
+
+| Software / Library | Purpose |
+|---|---|
+| Arduino IDE | Writing and uploading the program |
+| U8g2 | OLED display control |
+| Servo | Servo motor control |
+| FastLED | WS2812B LED control |
+
+### Wiring Reference
+
+- HC-SR04 TRIG → D9
+- HC-SR04 ECHO → D10
+- MG90S signal → D6
+- WS2812B DIN → D3
+- Active buzzer signal → D4
+- OLED SDA → A4
+- OLED SCL → A5
+
+**Power note:** Power the servo using the external regulated 5V supply. Connect the external supply's ground to Arduino GND, but do not connect its positive output to the Nano's 5V rail while the Nano is powered by USB.
 
 HERE ARE SOME IMAGES OF THE LENGTHY BUILD
 
